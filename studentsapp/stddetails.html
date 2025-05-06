@@ -1,0 +1,17 @@
+<html>
+    <h2>Final Results</h2>
+    <body>
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% else %}    
+            <p>StudentName: {{ student[0][1] }}</p>
+            <p>Maths: {{ student[0][2] }}</p>
+            <p>Science: {{ student[0][3] }}</p>
+            <p>Social: {{ student[0][4] }}</p>
+            <p>English: {{ student[0][5] }}</p>
+            <p>Percentage: {{ Percentage }}</p>
+            <p>Grade: {{ Grades }}</p>
+        {% endif %}
+
+    </body>
+</html>
